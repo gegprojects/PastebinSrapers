@@ -1,2 +1,13 @@
 # PastebinSrappers
 Two scripts for scrapping pastebin without needing the api
+
+pastebin_profile_scraper.py will scrape all public pastes from a user profile. 
+It will prompt for a directory to dowload the files in and the url of the pastebin profile i.e. https://pastebin/u/anon
+It scrapes all the pastes from the profile and downloads them to the specified directory
+
+stickyscraper.py scrapes all pastebin direct links and user profile links in a user provided txt file. It will not scrape pastebin links inside of a downloaded paste file, so ensure that you also scrape/save the nested pastebin links when using the script. Do not put pastebin.com/raw/ links in the input text file, the script automatically converts them.
+
+Both scripts will create a new directory pointing to the user's inputed folder path if the directory the user provides does not exits.
+The profile scrapper will create a subdirectory with the pastebin profile name and download the files to the subdirectory
+
+Both scripts require Requests, Beautiful Soup, urllib, and os packages to run. Not tested on windows. 
