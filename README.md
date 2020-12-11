@@ -10,4 +10,6 @@ stickyscraper.py scrapes all pastebin direct links and user profile links in a u
 Both scripts will create a new directory pointing to the user's inputed folder path if the directory the user provides does not exits.
 The profile scrapper will create a subdirectory with the pastebin profile name and download the files to the subdirectory
 
-Both scripts require Requests, Beautiful Soup, urllib, and os packages to run. Not tested on windows. 
+Both scripts require requests, BeautifulSoup4, urllib, and os packages in your python environment to run. To run, open a terminal in the same directory the scripts are downloaded at. Run python3 scriptname.py and follow the script's prompts.
+
+Not tested on windows. 
